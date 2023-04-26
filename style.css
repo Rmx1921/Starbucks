@@ -1,0 +1,591 @@
+@font-face {
+    font-family: SoDoSans-Light;
+    src: url(/font/SoDoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: SoDoSans-Bold;
+    src: url(/font/SoDoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: SoDoSans-Regular;
+    src: url(/font/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: SoDoSans-semi-bold;
+    src: url(/font/SoDoSans-semi-bold.otf);
+}
+/* font section end */
+body{
+    margin: 0;
+    padding-top: 50px;
+}
+
+p{
+    margin: 0;
+}
+/* nav bar */
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 915px;
+    height: 50px;
+    background-color:white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo{
+    margin-left: 74px;
+    margin-right: 35px;
+    justify-content: center;
+    width: 28px;
+   cursor: pointer;
+}
+
+.texts{
+    margin-top: -4px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-family: SoDoSans-Light;
+    margin-right: 127px;
+    cursor: pointer;
+}
+
+.input{
+    text-shadow: 1px 1px 15px #0000;
+    width: 140px;
+    height: 22px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: 1px solid #fff;
+    justify-content: center;
+    padding-bottom: 1px;
+    outline: 0px;
+    font-family: SoDoSans-Light;
+    font-size: 8px;
+}
+
+
+.input::placeholder{
+    font-size:8px;
+    font-family: myfont;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-right: 54px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    display: flex;
+    border-radius: 9px;
+}
+
+.search-icon{
+    width: 20px;
+    height: 10px;
+    padding-top: 8px;
+
+}
+
+.account-pic{
+ width: 25px;
+ height: 21px;
+}
+
+/* navi bar  end*/
+.main-body{
+    background-color: white;
+}
+/* reward */
+.reward-section{
+    display: flex;
+    flex-direction: row;
+    height: 53px;
+    background-color: #1e3932;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 2px;
+}
+
+.reward-banner{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 94px;
+}
+
+.reward-text{
+    color: #f9f9f9;
+    font-size: 13px;
+    font-family: myfont;
+    margin-right: 436px;
+}
+
+.reward-more{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    width: 52px;
+    height: 20px;
+    border: 1px solid white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 9px;
+}
+
+.reward-more-text{
+    font-family: SoDoSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    color: white;
+}
+/* /* reward  end*/
+/* Handcrafted curations*/
+.menu-selection{
+    margin-top: 1em;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.menu-selection-text{
+    font-family: SoDoSans-Bold;
+    font-size: 16px;
+    color: #1e3932;
+    margin-bottom: 18px;
+}
+/* Handcrafted curations end*/
+
+/* item-menu start */
+.menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-img{
+    width: 70px;
+    height: 70px;
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.image:hover{
+    border: 1.5px solid #00804c;
+    width: 68px;
+    height: 68px;
+}
+
+.item-name{
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+/* item-menu end */
+
+/* pricing menu */
+.pricing-menu{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 61px;
+    margin-bottom: 40px;
+    height: 150px;
+}
+.green-card{
+ width: 719px;
+}
+
+.card{
+    position: relative;
+}
+
+.leftbutton{
+    position: absolute;
+    left: -28px;
+    top: 50px;
+    opacity: 0.6;
+    width: 55px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.rightbutton{
+    position: absolute;
+    left: 690px;
+    top: 50px;
+    width: 55px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.left-img{
+    position: absolute;
+    width: 70px;
+    top: 18px;
+}
+
+.left-img img{
+    width: 100%;
+}
+
+.texts-pricing{
+    top:0;
+    left: 101px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    row-gap: 7.1px;
+    
+}
+.pricing-text-regular{
+    font-family: SoDoSans-Regular;
+    color: #ffffff;
+    font-size: 10px;
+}
+.pricing-text-main{
+    font-family: SoDoSans-Regular;
+    color: #ffffff;
+    font-size: 16px;
+}
+.price{
+    font-family: SoDoSans-Regular;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.pricing-starts-text{
+    font-family: myfont;
+    font-size: 9px;
+    color: #ffffff;
+}
+.pricing-seperator{
+    margin-top: 26px;
+}
+
+.orderbutton{
+    position: absolute;
+    width: 140px;
+    height: 27px;
+    top: 112px;
+    left: 549px;
+    background-color: white;
+    border: none;
+    border-radius: 20px 20px 19px 19px;
+    font-family: SoDoSans-Regular;
+    font-size: 9px;
+}
+/* pricing menu end*/
+
+/* Barista Recommends */
+.favourite-section{
+    background-color: #edebe9;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 200px;
+    width: 900px;
+}
+
+.favourite-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 86px;
+    margin-top: -40px;
+    width: 720px;
+    justify-content: space-between;
+}
+.main-text{
+    font-family: SoDoSans-Bold;
+    font-size: 15px;
+    color: #1e3932;
+}
+
+.viewection-text{
+    font-family: SoDoSans-Light;
+    font-size: 9px;
+    color: #212529;
+    font-weight: bold;
+}
+
+.greentier-img{
+    position: relative;
+    left: 860px;
+    top: -12px;
+    width: 40px;
+}
+
+.snaks-drinks{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 90px;
+    justify-content: space-between;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+    width: 225px;
+    height: 103px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.img{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.p-img{
+    width: 51px;
+    height: 51px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.p-name-icon{
+    position: absolute;
+    top: -10px;
+    left: 59px;
+    width: 120px;
+}
+
+.icon{
+    width: 10px;
+    height: 10px;
+    margin-bottom: -8px;
+}
+
+.p-name-text{
+    margin-top: 7px;
+}
+.p-diet-text{
+    font-size: 5px;
+    margin-top: -22px;
+}
+
+.pricetag-addbutton{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    left: 10px;
+    top: 70px;
+    width: 205px;
+    height: 20px;
+}
+
+.pricetag{
+    font-family: SoDoSans-semi-bold;
+    font-size: 9px;
+}
+
+.click{
+    background-color: #00754a;
+    height: 19px;
+    border-width: 0px;
+    border-radius: 9px;
+    color: #edebe9;
+    font-family: SoDoSans-semi-bold;
+    font-weight: 400px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.click:hover{
+    background-color: #1e3932;
+}
+/* Barista Recommends end*/
+
+/* Learn more about the world of coffee */
+.learnmore{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #edebe9;
+    margin-top: 29px;
+    height: 330px;
+}
+
+.learnmore-head{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 89px;
+    padding-top: 20px;
+}
+
+.banner{
+    position: relative;
+    width: 718px;
+    height: 240px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+
+.banner-pic{
+    border-radius: 5px;
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.banner-text{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    color: #ffffff;
+    width: 529px;
+}
+
+.banner-button{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    border-radius: 9px;
+    border-width: 0px;
+    background-color: white;
+    top: 106px;
+}
+/* Learn more about the world of coffee end */
+/* footer */
+.footer{
+    background-color: #0e382c;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-container{
+    height: 260px;
+}
+
+.footer-info{
+    display: flex;
+    position: relative;
+    margin-top:-19px;
+    margin-left: 59px;
+}
+
+.footer-info h4{
+    margin: 0;
+}
+
+.footer-logo-container{
+    width: 70px;
+}
+
+.footer-logo{
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    width: 37px;
+    height: 37px;
+}
+
+.aboutus{
+    color: white;
+    font-family: SoDoSans-semi-bold;
+    font-size: 14px;
+}
+
+.smalltext{
+    font-family: SoDoSans-Light;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+
+.smalltext:hover{
+   color: #212529;
+   transition: color 1s;
+}
+
+.social-icon{
+    width: 24px;
+    margin-left: 5px;
+}
+
+.store-icons{
+    width: 151px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.store-img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.footer-end{
+    display: flex;
+    border-top:  1px solid#a0a0a0;
+    height: 69px;
+    margin-top: -50px;
+    margin-left: 60px;
+    margin-right: 59px;
+    padding-top: 10px;
+    justify-content: start;
+    column-gap: 9px;
+}
+
+.footer-inner-div{
+    border-right:  1px solid#fdfbfb;
+    padding-right: 10px;
+    height: 10px;
+}
+
+.footer-end-text{
+    font-size: 9px;
+    color: white;
+}
+
+.footer-copyright-div{
+    margin-left: 257px;
+}
+
+.copyright-text{
+    font-family: SoDoSans-Light;
+    color: white;
+    font-size: 7px;
+    cursor: pointer;
+    
+}
+
+.copyright-text:hover{
+   color: #212529;
+   transition: color 1s;
+}
+/* footer end */
